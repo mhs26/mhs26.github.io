@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c90a7e01.css",
-    "main.js": "/static/js/main.ae7870dc.js",
+    "main.css": "/static/css/main.8c709a32.css",
+    "main.js": "/static/js/main.c077a9aa.js",
     "static/media/CourseCatalog2022-2023.pdf": "/static/media/CourseCatalog2022-2023.66deccc97fcb1e65e3cb.pdf",
     "static/media/Day1Bells2022.pdf": "/static/media/Day1Bells2022.e0cfc855e15a278163e8.pdf",
     "static/media/Scavenger.png": "/static/media/Scavenger.f9539aa76a736ab85497.png",
     "static/media/MHScalendar2022-23.pdf": "/static/media/MHScalendar2022-23.f345850d1713c6b98815.pdf",
     "static/media/bellschedule2122B.pdf": "/static/media/bellschedule2122B.a6913931ddda488470a2.pdf",
+    "static/media/Homerooms.pdf": "/static/media/Homerooms.ddc0ea0f42a2c774cf90.pdf",
     "index.html": "/index.html",
-    "main.c90a7e01.css.map": "/static/css/main.c90a7e01.css.map",
-    "main.ae7870dc.js.map": "/static/js/main.ae7870dc.js.map"
+    "main.8c709a32.css.map": "/static/css/main.8c709a32.css.map",
+    "main.c077a9aa.js.map": "/static/js/main.c077a9aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.c90a7e01.css",
-    "static/js/main.ae7870dc.js"
+    "static/css/main.8c709a32.css",
+    "static/js/main.c077a9aa.js"
   ]
 }
