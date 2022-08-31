@@ -86,7 +86,7 @@ export default function Home() {
       <h3 className="mt-32 text-3xl text-center text-red-300">
         Alert:{" "}
         <Link to="/announcements" className="underline alert hvr-float-shadow">
-          Grade 9 Open House + Orientation!
+          First day schedule can be found here.
         </Link>
       </h3>
     </>

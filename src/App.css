@@ -193,6 +193,22 @@ nav ul li {
   height: 100%;
 }
 
+
+.left1 {
+  position: relative;
+  width: 70%;
+  float: left;
+  height: 100%;
+}
+
+.right1 {
+  position: relative;
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+
+
 .subhead {
   color: rgb(161, 205, 244);
 }
@@ -229,4 +245,8 @@ nav ul li {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.archived {
+  color: gray;
 }

@@ -3,6 +3,7 @@ import React from "react";
 import Day1Bells from "../assets/Day1Bells2022.pdf";
 import MHSCalendar from "../assets/MHScalendar2022-23.pdf";
 import Scavenger from "../assets/Scavenger.png";
+import Homeroom from "../assets/Homerooms.pdf";
 
 export default function Announcements() {
   return (
@@ -15,11 +16,44 @@ export default function Announcements() {
         Announcements from teachers, emails, and other events are posted here
       </p>
 
-      <div className="left">
+      <div className="left1">
         <h3 className="mt-5 ml-10 text-3xl underline subhead">
-          Freshman Orientation
+          Freshman Day 1 of School
         </h3>
         <ul className="mt-5 ml-10 text">
+          <li className="ml-4">
+            {" "}
+            <a
+              href={Day1Bells}
+              className="underline alert hvr-grow"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              ○ Grade 9 Day 1 Schedule
+            </a>
+          </li>
+          <li className="ml-4">
+            {" "}
+            <a
+              href={Homeroom}
+              className="underline alert hvr-grow"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              ○ Grade 9 Day 1 HOMEROOM PLACEMENTS (Homeroom begins @ 8:00)
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="right1">
+        <h3 className="mt-5 ml-10 text-3xl underline subhead">
+          Archived Announcements
+        </h3>
+        <h3 className="mt-5 ml-10 text-xl subhead archived">
+          Freshman Orientation
+        </h3>
+        <ul className="mt-5 ml-10 text archived">
           <li className="ml-4">
             ○ Open house begins at 9:00 AM, ends at 11:00 AM
           </li>
@@ -37,7 +71,7 @@ export default function Announcements() {
             {" "}
             <a
               href={Day1Bells}
-              className="underline alert hvr-grow"
+              className="underline alert hvr-grow archived"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -48,7 +82,7 @@ export default function Announcements() {
             {" "}
             <a
               href={MHSCalendar}
-              className="underline alert hvr-grow"
+              className="underline alert hvr-grow archived"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -60,7 +94,7 @@ export default function Announcements() {
             {" "}
             <a
               href={Scavenger}
-              className="underline alert hvr-grow"
+              className="underline alert hvr-grow archived"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -68,12 +102,6 @@ export default function Announcements() {
             </a>
           </li>
         </ul>
-      </div>
-
-      <div className="right">
-        <h3 className="mt-5 ml-10 text-3xl underline subhead">
-          No more announcements for now...
-        </h3>
       </div>
     </>
   );
