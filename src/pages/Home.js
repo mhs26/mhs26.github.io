@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    let finalDate = new Date(`Sep 1, ${year} 8:00:00`).getTime();
+  // Sep 1, 2022 8:00:00
+  // Jun 1, 2023 2:50:00
+  const calculateTimeLeft = (time) => {
+    let finalDate = new Date(time).getTime();
     const difference = +finalDate - +new Date();
     let timeLeft = {};
 
@@ -20,16 +21,23 @@ export default function Home() {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [year] = useState(new Date().getFullYear());
+  const [timeLeft, setTimeLeft] = useState(
+    calculateTimeLeft("Sep 1, 2022 8:00:00")
+  );
+
+  const [timeLeft1, setTimeLeft1] = useState(
+    calculateTimeLeft("Jun 1, 2023 2:50:00")
+  );
 
   useEffect(() => {
     setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      setTimeLeft(calculateTimeLeft("Sep 1, 2022 8:00:00"));
+      setTimeLeft1(calculateTimeLeft("Jun 1, 2023 2:50:00"));
     }, 1000);
   });
 
   const timerComponents = [];
+  const timerComponents1 = [];
 
   Object.keys(timeLeft).forEach((interval) => {
     if (!timeLeft[interval]) {
@@ -42,36 +50,6 @@ export default function Home() {
       </span>
     );
   });
-
-  // jesus christ
-  const calculateTimeLeft1 = () => {
-    let year1 = new Date().getFullYear();
-    let finalDate1 = new Date(`Jun 1, ${year1 + 1} 2:50:00`).getTime();
-    const difference1 = +finalDate1 - +new Date();
-    let timeLeft1 = {};
-
-    if (difference1 > 0) {
-      timeLeft1 = {
-        days: Math.floor(difference1 / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference1 / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference1 / 1000 / 60) % 60),
-        seconds: Math.floor((difference1 / 1000) % 60),
-      };
-    }
-
-    return timeLeft1;
-  };
-
-  const [timeLeft1, setTimeLeft1] = useState(calculateTimeLeft1());
-  const [year1] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    setTimeout(() => {
-      setTimeLeft1(calculateTimeLeft1());
-    }, 1000);
-  });
-
-  const timerComponents1 = [];
 
   Object.keys(timeLeft1).forEach((interval1) => {
     if (!timeLeft1[interval1]) {
