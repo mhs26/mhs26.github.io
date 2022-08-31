@@ -1,5 +1,3 @@
-import React from "react";
-
 import Bell from "../assets/bellschedule2122B.pdf";
 import Courses from "../assets/CourseCatalog2022-2023.pdf";
 

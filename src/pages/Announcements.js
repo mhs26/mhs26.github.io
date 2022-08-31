@@ -1,5 +1,3 @@
-import React from "react";
-
 import Day1Bells from "../assets/Day1Bells2022.pdf";
 import MHSCalendar from "../assets/MHScalendar2022-23.pdf";
 import Scavenger from "../assets/Scavenger.png";
