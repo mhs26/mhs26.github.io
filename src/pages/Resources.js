@@ -21,6 +21,7 @@ export default function Resources() {
             href="https://www.millburn.org/"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ Official MHS website
           </a>
@@ -31,6 +32,7 @@ export default function Resources() {
             href="https://drive.google.com/drive/folders/0BytHEdOU5suiZU1ZR2w4dDQ2czg?resourcekey=0-2rnog7nwl51dsap7gxGPIQ"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ Future MHS Calendars
           </a>
@@ -41,13 +43,19 @@ export default function Resources() {
             href="https://millburn.powerschool.com/public/"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ Powerschool
           </a>
         </li>
 
         <li className="ml-4">
-          <a href={Bell} className="underline alert hvr-grow" target="_blank">
+          <a
+            href={Bell}
+            className="underline alert hvr-grow"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             ○ Bell Schedules
           </a>
         </li>
@@ -57,6 +65,7 @@ export default function Resources() {
             href={Courses}
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ Course Catalog 22-23
           </a>
@@ -67,6 +76,7 @@ export default function Resources() {
             href="https://launchpad.classlink.com/millburn"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ Millburn Classlink
           </a>
@@ -77,6 +87,7 @@ export default function Resources() {
             href="https://mhs.millburn.org/apps/pages/index.jsp?uREC_ID=811686&type=d&pREC_ID=1324940"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ MHS Calendars (more detailed)
           </a>
@@ -86,6 +97,7 @@ export default function Resources() {
             href="https://sci-hub.se/"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ SciHub - Pirate science articles/journals
           </a>
@@ -95,6 +107,7 @@ export default function Resources() {
             href="https://libgen.is/"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ Library Genesis - Pirate books
           </a>
@@ -104,6 +117,7 @@ export default function Resources() {
             href="https://z-lib.org/"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ Z-lib - Pirate books
           </a>
@@ -113,6 +127,7 @@ export default function Resources() {
             href="https://www.wolframalpha.com/"
             className="underline alert hvr-grow"
             target="_blank"
+            rel="noreferrer noopener"
           >
             ○ WoframAlpha - Online calculator for higher-level maths
           </a>
