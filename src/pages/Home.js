@@ -5,20 +5,35 @@ export default function Home() {
   // Sep 1, 2022 8:00:00
   // Jun 1, 2023 2:50:00
   const calculateTimeLeft = (time) => {
-    let finalDate = new Date(time).getTime();
-    const difference = +finalDate - +new Date();
-    let timeLeft = {};
+    const endTime = Math.floor(new Date(time).getTime() / 1000);
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
+    const nowTime = Math.floor(new Date().getTime() / 1000);
+
+    console.log(nowTime);
+
+    const timeLeft = endTime - nowTime;
+
+    if (timeLeft < 0) return;
+
+    const days = Math.floor(timeLeft / 86400);
+    const hours = Math.floor((timeLeft - days * 86400) / 3600);
+    const minutes = Math.floor((timeLeft - days * 86400 - hours * 3600) / 60);
+    const seconds = Math.floor(
+      timeLeft - days * 86400 - hours * 3600 - minutes * 60
+    );
+
+    if (days) {
+      return `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
     }
-
-    return timeLeft;
+    if (hours) {
+      return `${hours} hours ${minutes} minutes ${seconds} seconds`;
+    }
+    if (minutes) {
+      return `${minutes} minutes ${seconds} seconds`;
+    }
+    if (seconds) {
+      return `${seconds} seconds`;
+    }
   };
 
   const [timeLeft, setTimeLeft] = useState(
@@ -36,33 +51,6 @@ export default function Home() {
     }, 1000);
   });
 
-  const timerComponents = [];
-  const timerComponents1 = [];
-
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
-
-    timerComponents.push(
-      <span>
-        {timeLeft[interval]} {interval}{" "}
-      </span>
-    );
-  });
-
-  Object.keys(timeLeft1).forEach((interval1) => {
-    if (!timeLeft1[interval1]) {
-      return;
-    }
-
-    timerComponents1.push(
-      <span>
-        {timeLeft1[interval1]} {interval1}{" "}
-      </span>
-    );
-  });
-
   return (
     <>
       <h1 className="mt-5 text-4xl font-bold text-center underline head">
@@ -76,17 +64,23 @@ export default function Home() {
       </p>
 
       <h3 className="mt-10 text-2xl text-center cdown">
-        {timerComponents.length ? (
-          timerComponents
+        {timeLeft ? (
+          <>
+            {timeLeft} <strong>until school STARTS</strong>
+          </>
         ) : (
           <span>School started! The grind begins...</span>
         )}{" "}
-        <strong>until school STARTS</strong>
       </h3>
 
       <h3 className="mt-5 text-2xl text-center cdown">
-        {timerComponents1.length ? timerComponents1 : <span>Time's up!</span>}{" "}
-        <strong>until school ENDS</strong>
+        {timeLeft1 ? (
+          <>
+            {timeLeft1} <strong>until school ENDS</strong>
+          </>
+        ) : (
+          <span>Time's up!</span>
+        )}{" "}
       </h3>
 
       <h3 className="mt-32 text-3xl text-center text-red-300">

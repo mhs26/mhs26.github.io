@@ -39,6 +39,7 @@ export default function Announcements() {
               href={Day1Bells}
               className="underline alert hvr-grow"
               target="_blank"
+              rel="noreferrer noopener"
             >
               ○ Grade 9 Open House + Orientation!
             </a>
@@ -49,6 +50,7 @@ export default function Announcements() {
               href={MHSCalendar}
               className="underline alert hvr-grow"
               target="_blank"
+              rel="noreferrer noopener"
             >
               ○ Updated MHS Calendar 22-23 (you can find a condensed version in
               "Calendar")
@@ -60,6 +62,7 @@ export default function Announcements() {
               href={Scavenger}
               className="underline alert hvr-grow"
               target="_blank"
+              rel="noreferrer noopener"
             >
               ○ Scavenger hunt information
             </a>
