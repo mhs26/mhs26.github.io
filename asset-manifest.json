@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c709a32.css",
-    "main.js": "/static/js/main.c077a9aa.js",
+    "main.css": "/static/css/main.9fdec2ee.css",
+    "main.js": "/static/js/main.3ff7f8eb.js",
     "static/media/CourseCatalog2022-2023.pdf": "/static/media/CourseCatalog2022-2023.66deccc97fcb1e65e3cb.pdf",
     "static/media/Day1Bells2022.pdf": "/static/media/Day1Bells2022.e0cfc855e15a278163e8.pdf",
     "static/media/Scavenger.png": "/static/media/Scavenger.f9539aa76a736ab85497.png",
@@ -9,11 +9,11 @@
     "static/media/bellschedule2122B.pdf": "/static/media/bellschedule2122B.a6913931ddda488470a2.pdf",
     "static/media/Homerooms.pdf": "/static/media/Homerooms.ddc0ea0f42a2c774cf90.pdf",
     "index.html": "/index.html",
-    "main.8c709a32.css.map": "/static/css/main.8c709a32.css.map",
-    "main.c077a9aa.js.map": "/static/js/main.c077a9aa.js.map"
+    "main.9fdec2ee.css.map": "/static/css/main.9fdec2ee.css.map",
+    "main.3ff7f8eb.js.map": "/static/js/main.3ff7f8eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c709a32.css",
-    "static/js/main.c077a9aa.js"
+    "static/css/main.9fdec2ee.css",
+    "static/js/main.3ff7f8eb.js"
   ]
 }
