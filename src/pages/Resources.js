@@ -1,6 +1,6 @@
 import React from "react";
 
-import Bell from "../assets/bellschedule2122B.pdf";
+import Bell from "../assets/bellschedule22-23.pdf";
 import Courses from "../assets/CourseCatalog2022-2023.pdf";
 
 export default function Resources() {
@@ -15,42 +15,24 @@ export default function Resources() {
         here
       </p>
 
-      <div className="left1">
-        <h3 className="mt-5 ml-10 text-3xl underline head">Daily Homework</h3>
+      <div className="left">
+        <h3 className="mt-5 ml-10 text-3xl underline head">Study Guides + Notes</h3>
 
-        <h3 className="mt-5 ml-16 text-3xl underline subhead">
-          Accel SS - Kian Barry
-        </h3>
         <ul className="mt-5 ml-10 text">
-          <li className="ml-20">
+          <li className="ml-4">
             <a
-              href="https://classroom.google.com/c/NTQ0MjcxMzY1MzE2/a/NTQ1MDM4MDMwNzIw/details"
+              href="https://codehs.gitbooks.io/apjava/content/"
               className="underline alert hvr-grow"
               target="_blank"
               rel="noreferrer noopener"
             >
-              ○ Ch. 1 of "Guns, Germs, and Steel - <strong>Due Sep 6</strong>
-            </a>
-          </li>
-
-          <h3 className="mt-5 ml-6 text-3xl underline subhead">
-            Acc Econ - Blijdesteijn
-          </h3>
-
-          <li className="ml-20">
-            <a
-              href="https://classroom.google.com/c/NTQ0Mjg2NzU0Njk3/a/NTQ0Mjg3MjQzNTE0/details"
-              className="underline alert hvr-grow"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              ○ Course Guidelines - <strong>Due Sep 7</strong>
+              ○ Resources for CS II Course
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="right1">
+      <div class="right">
         <h3 className="mt-5 ml-10 text-3xl underline subhead">Useful Links</h3>
 
         <ul className="mt-5 ml-10 text">
@@ -94,7 +76,7 @@ export default function Resources() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              ○ Bell Schedules
+              <strong>○ Bell Schedules</strong>
             </a>
           </li>
 

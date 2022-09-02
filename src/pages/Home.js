@@ -63,6 +63,7 @@ export default function Home() {
         study guides, notes) for school.
       </p>
 
+      /*
       <h3 className="mt-10 text-2xl text-center cdown">
         {timeLeft ? (
           <>
@@ -72,6 +73,7 @@ export default function Home() {
           <span>School started! The grind begins...</span>
         )}{" "}
       </h3>
+      */
 
       <h3 className="mt-5 text-2xl text-center cdown">
         {timeLeft1 ? (

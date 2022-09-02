@@ -18,14 +18,23 @@ export default function Announcements() {
 
       <div className="left1">
         <h3 className="mt-5 ml-10 text-3xl underline subhead">
-          Freshman Day 1 of School
+          N/A
         </h3>
         <ul className="mt-5 ml-10 text">
+
+        </ul>
+      </div>
+
+      <div className="right1">
+        <h3 className="mt-5 ml-10 text-3xl underline subhead">
+          Archived Announcements
+        </h3>
+        <ul className="mt-5 ml-10 archived">
           <li className="ml-4">
             {" "}
             <a
               href={Day1Bells}
-              className="underline alert hvr-grow"
+              className="underline alert hvr-grow archived"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -36,20 +45,14 @@ export default function Announcements() {
             {" "}
             <a
               href={Homeroom}
-              className="underline alert hvr-grow"
+              className="underline alert hvr-grow archived"
               target="_blank"
               rel="noreferrer noopener"
             >
               ○ Grade 9 Day 1 HOMEROOM PLACEMENTS (Homeroom begins @ 8:00)
             </a>
           </li>
-        </ul>
-      </div>
-
-      <div className="right1">
-        <h3 className="mt-5 ml-10 text-3xl underline subhead">
-          Archived Announcements
-        </h3>
+    </ul>
         <h3 className="mt-5 ml-10 text-xl subhead archived">
           Freshman Orientation
         </h3>
